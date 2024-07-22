@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Text-Editor</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Text-Editor</h1>
+    <div class="editor-frame">
+      <div class="controls">
+        <label for="fontName">Font Family</label>
+        <select id="fontName" class="control-select"></select>
+
+        <label for="fontSize">Font Size</label>
+        <select id="fontSize" class="control-select"></select>
+        
+        <label for="italicToggle">
+          <input type="checkbox" id="italicToggle"> Italic
+        </label>
+
+        <button id="bold" class="option-button">
+          <i class="fa-solid fa-bold">B</i>
+        </button>
+
+        <button id="underline" class="option-button">
+          <i class="fa-solid fa-underline">U</i>
+        </button>
+      </div>
+      <div id="text-input" contenteditable></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
